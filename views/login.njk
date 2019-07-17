@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Login</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+
+<div class="login-form">
+    <h1>Login</h1>
+    <form action="/albums" method="post">
+        <input type="text" name="username" id="username" placeholder="Username" required>
+        <input type="password" name="password" id="password" placeholder="Password" required>
+       <input type="submit" value="Login" id="submit" onclick="validate()" />
+        <p class="ml-2 mt-2">( username: admin password: admin )</p>
+    </form>
+    <h1>{{message}}</h1>
+</div>
+
+
+
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="js/app-min.js">
+</body>
+</html>
