@@ -17,24 +17,18 @@ app.set("view engine", "njk"); // uzantı eklemek icin nodemon app.js -e js,html
 
 app.get("/", function(req,res) {
     res.render("login");
-
 });
 
 app.get("/albums", function(req,res) {
-
     res.render("albums");
-
 });
 
 app.post("/albums", function (req, res) {
     if ( req.body.username == "admin" && req.body.password == "admin"){
-
         res.render("albums");
-
     }
     else
         res.render("login", { message: 'Yanlış kullanıcı veya parola!' });
-    
 });
 
 
