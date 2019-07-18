@@ -5,11 +5,7 @@ window.addEventListener("load", function () {
 
   XHR.onreadystatechange = function () {
     if (XHR.readyState == 4 && XHR.status == 200) {
-
-     var posts = JSON.parse(XHR.responseText);
-        
-
-       for (var i = 1; i < 9; i++) {
+        for (var i = 1; i < 9; i++) {
             albumListe.innerHTML += `<li class="list-group-item albumid" data-album-id="${i}"> 
                                           <a href="#"> Album ${i}</a>
                                      </li>`; 
@@ -49,10 +45,10 @@ window.addEventListener("load", function () {
             var expandedImg= document.getElementById('expandedImg');
                 
                 if (!expandedImg) {
-                                    return;
-                                }
-                                expandedImg.setAttribute('src', albumFullUrl);
-                                expandedImg.parentElement.style.display='block';
+                   return;
+                }
+                    expandedImg.setAttribute('src', albumFullUrl);
+                    expandedImg.parentElement.style.display='block';
                             })
                         });
                     }
