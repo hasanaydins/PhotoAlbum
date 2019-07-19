@@ -7,7 +7,19 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon app.js -e js,njk"
   },
+<<<<<<< HEAD
   
+=======
+  "engines": {
+    "node": ">= v10.16.0",
+    "npm": ">= 6.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/hasanaydins/PhotoAlbum.git"
+  },
+  "bugs": "https://github.com/hasanaydins/PhotoAlbum/issues",
+>>>>>>> 90c245fb43ff93105cb4f55891288301be817706
   "author": "hasan",
   "license": "ISC",
   "dependencies": {
@@ -22,8 +34,6 @@
     "gulp-less": "*",
     "gulp-minify": "^3.1.0",
     "gulp-watch": "*",
-    "install": "^0.13.0",
-    "nodemon": "^1.19.1",
-    "npm": "^6.10.1"
+    "nodemon": "^1.19.1"
   }
 }
