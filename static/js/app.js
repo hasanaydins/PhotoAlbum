@@ -42,9 +42,11 @@ window.addEventListener("load", function () {
        Array.from(albumThumbs).forEach(function(elm) {
            elm.addEventListener('click', function() {
             var albumFullUrl = elm.dataset.fullUrl;
-            var expandedImg= document.getElementById('expandedImg');
+            var closebtn = document.getElementsByClassName('closebtn');
+            var expandedImg= document.getElementById('bigImage');
                 
                 if (!expandedImg) {
+                    closebtn.style.display='none';
                    return;
                 }
                     expandedImg.setAttribute('src', albumFullUrl);

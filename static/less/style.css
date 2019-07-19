@@ -54,12 +54,8 @@ li {
     display: table;
     clear: both;
   }
-  
-  #as {
-    position: relative;
-    display: none;
-    
-
+  #bigImage {
+   width: 100%;
   }
   #imgtext {
     position: absolute;
@@ -68,13 +64,10 @@ li {
     color: white;
     font-size: 20px;
   }
-  
+
   .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
+    position:relative;
+    color: black;
+    font-size: 30px;
     cursor: pointer;
-    
   }

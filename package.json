@@ -7,9 +7,6 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "nodemon app.js -e js,njk"
   },
-<<<<<<< HEAD
-  
-=======
   "engines": {
     "node": ">= v10.16.0",
     "npm": ">= 6.9.0"
@@ -19,7 +16,6 @@
     "url": "https://github.com/hasanaydins/PhotoAlbum.git"
   },
   "bugs": "https://github.com/hasanaydins/PhotoAlbum/issues",
->>>>>>> 90c245fb43ff93105cb4f55891288301be817706
   "author": "hasan",
   "license": "ISC",
   "dependencies": {
