@@ -1,15 +1,15 @@
 #  Photo Album
  NodeJs ve ExpressJs kullanarak API üzerinden album ve fotograf goruntuleme sitesi.
  
- Uygulamayı açmak icin : [![](./readme-img.img/heroku.svg)](https://photo-album-challenge.herokuapp.com "Uygulamayı Aç")
+ Uygulamayı açmak icin : [![](./readme-img/heroku.svg)](https://photo-album-challenge.herokuapp.com "Uygulamayı Aç")
  
  ## Görünüm
 #### Login Ekranı
-![Example screenshot](./readme-img.img/loginscreen.png)
+![Example screenshot](./readme-img/loginscreen.png)
 
 
 #### Anasayfa Ekranı
-![Example screenshot](./readme-img.img/homescreen.png)
+![Example screenshot](./readme-img/homescreen.png)
 
 
 
@@ -467,7 +467,7 @@ Dosyaları sıkıstırmak icin ise konsola default olarak da tanımladıgımız 
 
 ### Uygulamamız hazır :stuck_out_tongue_winking_eye:
 Açmak için:
-[![](./readme-img.img/heroku.svg)](https://photo-album-challenge.herokuapp.com "Uygulamayı Aç")
+[![](./readme-img/heroku.svg)](https://photo-album-challenge.herokuapp.com "Uygulamayı Aç")
 
 ------------
 
