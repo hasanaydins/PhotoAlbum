@@ -9,7 +9,6 @@ function css() {
         .pipe(minifyCSS())
         .pipe(dest('dist/css'))
 }
-
 function minify() {
     return src('static/js/*.js', { sourcemaps: true })
     // Minify the file
@@ -17,7 +16,6 @@ function minify() {
         // Output
         .pipe(dest('dist/js', { sourcemaps: true }))
 }
-
 function watcher(done) {
     // css changes
     watch('static/**/*.less', css);
@@ -25,7 +23,6 @@ function watcher(done) {
     watch('static/**/*.js', minify);
     done();
 }
-
 
 exports.watcher = watcher;
 exports.css = css;

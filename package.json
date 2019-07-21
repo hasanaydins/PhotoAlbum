@@ -8,8 +8,8 @@
         "server": "nodemon app.js -e js,njk"
     },
     "engines": {
-        "node": ">= v10.16.0",
-        "npm": ">= 6.9.0"
+        "node": ">= v10.15.3",
+        "npm": ">= 6.4.1"
     },
     "repository": {
         "type": "git",
@@ -21,14 +21,14 @@
     "dependencies": {
         "body-parser": "^1.19.0",
         "express": "^4.17.1",
-        "nunjucks": "^3.2.0"
+        "nunjucks": "^3.2.0",
+        "passport": "^0.4.0"
     },
     "devDependencies": {
         "gulp": "^4.0.2",
         "gulp-csso": "*",
         "gulp-less": "*",
         "gulp-minify": "^3.1.0",
-        "nodemon": "^1.19.1",
-        "passport": "^0.4.0"
+        "nodemon": "^1.19.1"
     }
 }
