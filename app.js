@@ -7,7 +7,7 @@ var app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 
-app.use(express.static('static'));
+app.use(express.static('dist'));
 app.set("view engine", "njk"); // uzantı eklemek icin nodemon app.js -e js,html,njk,css
 
 nunjucks.configure('views', {
