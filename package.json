@@ -1,37 +1,34 @@
 {
-  "name": "challengeproj",
-  "version": "1.0.0",
-  "description": "",
-  "main": "app.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "server": "nodemon app.js -e js,njk"
-  },
-  "engines": {
-    "node": ">= v10.16.0",
-    "npm": ">= 6.9.0"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/hasanaydins/PhotoAlbum.git"
-  },
-  "bugs": "https://github.com/hasanaydins/PhotoAlbum/issues",
-  "author": "hasan",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.19.0",
-    "express": "^4.17.1",
-    "nunjucks": "^3.2.0"
-  },
-  "devDependencies": {
-    "gulp": "*",
-    "gulp-cli": "^*",
-    "gulp-csso": "*",
-    "gulp-less": "*",
-    "gulp-minify": "^3.1.0",
-    "gulp-watch": "*",
-    "nodemon": "^1.19.1"
-  }
+    "name": "challengeproj",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "server": "nodemon app.js -e js,njk"
+    },
+    "engines": {
+        "node": ">= v10.16.0",
+        "npm": ">= 6.9.0"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/hasanaydins/PhotoAlbum.git"
+    },
+    "bugs": "https://github.com/hasanaydins/PhotoAlbum/issues",
+    "author": "hasan",
+    "license": "ISC",
+    "dependencies": {
+        "body-parser": "^1.19.0",
+        "express": "^4.17.1",
+        "nunjucks": "^3.2.0"
+    },
+    "devDependencies": {
+        "gulp": "^4.0.2",
+        "gulp-csso": "*",
+        "gulp-less": "*",
+        "gulp-minify": "^3.1.0",
+        "nodemon": "^1.19.1",
+        "passport": "^0.4.0"
+    }
 }
-
-
