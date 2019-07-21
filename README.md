@@ -1,4 +1,9 @@
 #  Photo Album
+![GitHub last commit](https://img.shields.io/github/last-commit/hasanaydins/PhotoAlbum.svg?label=Son%20G%C3%BCncelleme&style=popout)
+![GitHub](https://img.shields.io/github/license/hasanaydins/PhotoAlbum.svg?label=Lisans&style=popout)
+![GitHub repo size](https://img.shields.io/github/repo-size/hasanaydins/PhotoAlbum.svg?label=Boyut&style=popout)
+
+
  NodeJs ve ExpressJs kullanarak API üzerinden album ve fotograf goruntuleme sitesi.
  
  Uygulamayı açmak icin : [![](./readme-img/heroku.svg)](https://hsn-photo.herokuapp.com "Uygulamayı Aç")
