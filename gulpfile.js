@@ -6,6 +6,7 @@ const uglify = require('gulp-minify');
 function css() {
     return src('static/less/*.less')
         .pipe(less())
+        .pipe(dest('static/css'))
         .pipe(minifyCSS())
         .pipe(dest('dist/css'))
 }
