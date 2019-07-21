@@ -1,101 +1,96 @@
-@primarycolor: #FF7F50;  
-@color:#800080;  
-
-h1{  
-color: @primarycolor;  
-}  
-h2{  
-color: @color;  
-}  
-
-
-
-.login-form {
-
-    width: 300px;
-    margin: 200px auto;
-
+#loginBody {
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 40px;
+	padding-top: 40px;
 }
-
-.login-form h1 {
-    text-align: center;
-    color: #4d4d4d;
-    font-size: 24px;
-    padding: 20px 0 20px 0;
+.form-signin {
+	margin: 150px auto;
+	max-width: 350px;
+	padding: 0 20px;
+	width: 100%;
+	.checkbox {
+		font-weight: 400;
+	}
+	.form-control {
+		box-sizing: border-box;
+		font-size: 16px;
+		height: auto;
+		padding: 10px;
+		position: relative;
+		&:focus {
+			z-index: 2;
+		}
+	}
+	input[type="text"] {
+		border-bottom-left-radius: 0;
+		border-bottom-right-radius: 0;
+		margin-bottom: -1px;
+	}
+	input[type="password"] {
+		border-top-left-radius: 0;
+		border-top-right-radius: 0;
+		margin-bottom: 10px;
+	}
 }
-
-.login-form input[type="password"],
-.login-form input[type="text"] {
-    width: 100%;
-    padding: 15px;
-    border: 1px solid #dddddd;
-    margin-bottom: 15px;
-    box-sizing:border-box;
-}
-
-.login-form input[type="submit"] {
-    width: 100%;
-    padding: 15px;
-    background-color: #535b63;
-    border: 0;
-    box-sizing: border-box;
-    cursor: pointer;
-    font-weight: bold;
-    color: #ffffff;
-}
-
 li {
-    list-style-type: none;
+	list-style-type: none;
 }
-
-  
-  /* The grid: Four equal columns that floats next to each other */
-  .column {
-    float: left;
-    width: 25%;
-    padding: 10px;
-  }
-  
-  /* Style the images inside the grid */
-  .column img {
-    opacity: 0.8; 
-    cursor: pointer; 
-  }
-  
-  .column img:hover {
-    opacity: 1;
-  }
-  
-  /* Clear floats after the columns */
-  .row:after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-  
-  /* The expanding image container */
-  #expandedId {
-    position: relative;
-    display: none;
-    
-
-  }
-  /* Expanding image text */
-  #imgtext {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: white;
-    font-size: 20px;
-  }
-  
-  /* Closable button inside the expanded image */
-  .closebtn {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
-    
-  }
+.column {
+	float: left;
+	padding: 10px;
+	width: 25%;
+	img {
+		cursor: pointer;
+		opacity: 0.8;
+		&:hover {
+			opacity: 1;
+		}
+	}
+}
+.row {
+	&:after {
+		clear: both;
+		content: "";
+		display: table;
+	}
+}
+#bigImage {
+	width: 100%;
+}
+#imgtext {
+	bottom: 15px;
+	color: white;
+	font-size: 20px;
+	left: 15px;
+	position: absolute;
+}
+.closebtn {
+	color: rgb(122, 122, 122);
+	cursor: pointer;
+	cursor: pointer;
+	font-size: 70px;
+	line-height: 30px;
+	position: absolute;
+	right: 25px;
+	top: 8px;
+	transition: 0.3s;
+}
+.errorMes {
+	margin-top: 300px;
+	text-align: center;
+}
+.wrongpass {
+	color: #ff1e4d;
+	font-size: 18px;
+	margin-top: 10px;
+	text-align: center;
+}
+.imgs {
+	display: none;
+	position: relative;
+}
+#thumbnails {
+	width: 100%;
+}

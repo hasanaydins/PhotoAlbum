@@ -1,19 +1,6 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+{% include "partials/header.njk" %}
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
-          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="less/style.css">
-    <title>Photo Albums</title>
-</head>
-<body>
-<div class="container">
+<div class="container mt-4">
     <div class="row">
         <div class="col-sm-12 col-lg-3 pt-5">
             <div class="card">
@@ -27,12 +14,18 @@
             </div>
         </div>
         </br>
-        <div class="container">
+        <div class="container imgs">
+        <span class="closebtn" id="closeBtn" onclick="myFunction(id)">&times;</i></span>
             <img id="bigImage">
-            <span class="closebtn" onclick="this.parentElement.style.display='none'"><i class="fa fa-times-circle"></i></span>
         </div>
     </div>
 </div>
-<script src="js/app.js" type="text/javascript"></script>
-</body>
-</html>
+
+<script>
+var closeBtn=document.getElementById("closeBtn")
+closeBtn.addEventListener("click" , function() {
+  closeBtn.parentElement.style.display='none';
+})
+</script>
+
+{% include "partials/footer.njk" %}

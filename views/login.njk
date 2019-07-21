@@ -1,29 +1,33 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>Login</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="less/style.css">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+      <title>Photo Albums</title>
 </head>
 <body>
 
-
-<div class="login-form">
-    <h1>Login</h1>
-    <form action="/albums" method="post">
-        <input type="text" name="username" id="username" placeholder="Username" required>
-        <input type="password" name="password" id="password" placeholder="Password" required>
-       <input type="submit" value="Login" id="submit" onclick="validate()" />
-        <p class="ml-2 mt-2">( username: admin password: admin )</p>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark ">
+      <a class="navbar-brand font-weight-bold" href="/">Photo Album<i class="fas fa-camera-retro px-2"></i>  </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+      </button>
+</nav>
+<div  class="loginBody">
+<form action="/albums" method="post" class="form-signin">
+      <img class="mb-4" src="https://getbootstrap.com/assets/brand/bootstrap-solid.svg" alt="" width="72" height="72">
+      <h1 class="h3 mb-4 text-center">Please sign in</h1>
+      <label for="username" class="sr-only">Username</label>
+      <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>
+      <label for="password" class="sr-only">Password</label>
+      <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+      <button class="btn btn-lg btn-primary btn-block" type="submit" value="Login" id="submit" onclick="validate()">Sign in</button>
+      <footer class="blockquote-footer text-center mt-2">username: admin password: admin</footer>
+      <p class="mt-2 text-center text-danger">{{message}}</p>
     </form>
-    <h1>{{message}}</h1>
 </div>
 
-<script src="js/app.js">
-</body>
-</html>
+{% include "partials/footer.njk" %}
