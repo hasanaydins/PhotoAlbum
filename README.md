@@ -1,7 +1,7 @@
 #  Photo Album
  NodeJs ve ExpressJs kullanarak API üzerinden album ve fotograf goruntuleme sitesi.
  
- Uygulamayı açmak icin : [![](./readme-img/heroku.svg)](https://photo-album-challenge.herokuapp.com "Uygulamayı Aç")
+ Uygulamayı açmak icin : [![](./readme-img/heroku.svg)](https://stark-ridge-17272.herokuapp.com/ "Uygulamayı Aç")
  
  ## Görünüm
 #### Login Ekranı
