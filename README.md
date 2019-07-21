@@ -2,6 +2,7 @@
  NodeJs ve ExpressJs kullanarak API üzerinden album ve fotograf goruntuleme sitesi.
  
  Uygulamayı açmak icin : [![](./readme-img/heroku.svg)](https://hsn-photo.herokuapp.com "Uygulamayı Aç")
+
  
  ## Görünüm
 #### Login Ekranı
@@ -220,6 +221,7 @@ const uglify = require('gulp-minify');
 function css() {
     return src('static/less/*.less')
         .pipe(less())
+        .pipe(dest('static/css'))
         .pipe(minifyCSS())
         .pipe(dest('dist/css'))
 }
@@ -254,7 +256,7 @@ Dosyaları sıkıstırmak icin ise konsola default olarak da tanımladıgımız 
 
 ### Uygulamamız hazır :stuck_out_tongue_winking_eye:
 Açmak için:
-[![](./readme-img/heroku.svg)](https://photo-album-challenge.herokuapp.com "Uygulamayı Aç")
+[![](./readme-img/heroku.svg)](https://hsn-photo.herokuapp.com "Uygulamayı Aç")
 
 ------------
 
