@@ -30,13 +30,21 @@ window.addEventListener("load", function() {
                             });
 
                             cardDiv.innerHTML = "";
-
-                            for (var t = 0; t < 8; t++) {
-                                cardDiv.innerHTML += `<div class="col-lg-3 col-6 album-thumb" data-full-url="${photos[t].url}">
+                            if (window.outerWidth < 960 ) {
+                                for (var t = 0; t < 4; t++) {
+                                    cardDiv.innerHTML += `<div class="col-lg-3 col-6 album-thumb" data-full-url="${photos[t].url}">
                                                     <img id="thumbnails" src="${photos[t].thumbnailUrl}">
                                                     <p>${photos[t].title}</p>
                                                   </div>`;
                                 }
+                            } else if (window.outerWidth < 960) {
+                                for (var t = 0; t < 8; t++) {
+                                    cardDiv.innerHTML += `<div class="col-lg-3 col-6 album-thumb" data-full-url="${photos[t].url}">
+                                                    <img id="thumbnails" src="${photos[t].thumbnailUrl}">
+                                                    <p>${photos[t].title}</p>
+                                                 </div>`;
+                                }
+                            }
             //// Full fotogfarının getirilmesi
           var albumThumbs = document.querySelectorAll('.album-thumb');
                  Array.from(albumThumbs).forEach(function(elm) {
