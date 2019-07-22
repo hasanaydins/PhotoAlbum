@@ -6,7 +6,6 @@ var app = express();
 
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-
 app.use(express.static('dist'));
 app.set("view engine", "njk"); // uzantı eklemek icin nodemon app.js -e js,html,njk,css
 
@@ -17,15 +16,19 @@ nunjucks.configure('views', {
 app.get("/", function(req, res) {
     res.render("login");
 });
+
 app.post("/albums", function(req, res) {
-    if (req.body.username == "admin" && req.body.password == "admin") {
+    if (req.body.username === "admin" && req.body.password === "admin") {
         res.render("albums");
     } else
-        res.render("login", { message: 'Kullanıcı adı veya parola geçersiz!' });
+        res.render("login", {
+            message: 'Kullanıcı adı veya parola geçersiz!' });
 });
+
 app.get("/albums", function(req, res) {
     res.render("error");
 });
+
 app.get('/logout', function(req, res) {
     req.logout();
     res.redirect('/');
