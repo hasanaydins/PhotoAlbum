@@ -25,6 +25,8 @@
         "passport": "^0.4.0"
     },
     "devDependencies": {
+        "express-flash": "0.0.2",
+        "express-session": "^1.16.2",
         "gulp": "^4.0.2",
         "gulp-csso": "*",
         "gulp-less": "*",
@@ -32,5 +34,3 @@
         "nodemon": "^1.19.1"
     }
 }
-
-
