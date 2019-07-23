@@ -40,6 +40,6 @@ app.get('*', function(req, res){
   });
 
 ///// SERVER LISTEN 
-app.listen(process.env.PORT || 2420, function() {
+app.listen(process.env.PORT || 3000, function() {
     console.log("server %d portunda", this.address().port);
 });
